@@ -44,6 +44,8 @@ main {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    border: solid 3px;
+    border-color: rgb(70, 67, 67);
 }
 
 .home {
@@ -102,4 +104,5 @@ main {
     background-color: lightgray;
     text-align: center;
     padding: 20px;
+
 }
