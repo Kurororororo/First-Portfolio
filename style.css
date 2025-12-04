@@ -1,0 +1,105 @@
+* {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    
+}
+
+main {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 1rem;
+}
+
+.navbar {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightgray;
+    padding: 30px;
+    gap: 800px;
+    
+    
+}
+
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: black
+    
+}
+
+.navbar ul a:hover {
+    transform:scale(1.05);
+    transition: 0.3s ease-out;
+    color: grey;
+}
+
+.pfp {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home {
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+    width: 70%;
+    
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+    width: 70%;
+    
+}
+.project1 {
+    width: 600px;
+}
+.pro1 {
+    color: black;
+}
+
+.skills {
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+    width: 70%;
+}
+
+.contacts {
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+    width: 70%;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.contacts a:hover {
+    transform: scale(1.05);
+    transition: width 0.3s ease-out;
+    color: grey;
+}
+
+
+.bottom {
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+}
