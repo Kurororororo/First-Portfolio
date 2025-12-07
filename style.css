@@ -3,22 +3,18 @@
     margin: 0;
 }
 
-
-
 .navbar {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 6fr;
     background-color: #314028;
     padding: 30px;
-    gap: 800px;
     color: beige;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     gap: 30px;
-    
 }
 
 .navbar ul a {
@@ -30,7 +26,7 @@
 .navbar ul a:hover {
     transform:scale(1.05);
     transition: 0.3s ease-out;
-    color: grey;
+    color: white;
 }
 
 .pfp {
@@ -39,7 +35,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: solid 3px;
-    border-color: rgb(70, 67, 67);
+    border-color: #314028;
 }
 
 .home {
@@ -71,12 +67,6 @@
     margin:auto;
     color: #314028;
     background-color: beige;
-}
-
-.realprojects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
 }
 
 .project1 {
