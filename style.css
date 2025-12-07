@@ -1,24 +1,18 @@
 * {
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
-    
 }
 
-main {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding: 1rem;
-}
+
 
 .navbar {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: lightgray;
+    background-color: #314028;
     padding: 30px;
     gap: 800px;
-    
-    
+    color: beige;
 }
 
 .navbar ul{
@@ -29,7 +23,7 @@ main {
 
 .navbar ul a {
     text-decoration: none;
-    color: black
+    color: beige;
     
 }
 
@@ -50,10 +44,11 @@ main {
 
 .home {
     align-items: center;
-    padding: 50px;
-    margin: auto;
-    width: 70%;
-    
+    padding: 200px;
+    margin: 0;
+    border: 0;
+    color: #314028;
+    background-color: beige;
 }
 
 .intro {
@@ -61,36 +56,56 @@ main {
     grid-template-columns: auto auto;
     gap: 5px;
     align-items: center;
-    padding: 50px;
-    margin: auto;
-    width: 70%;
-    
+    padding: 200px;
+    margin:auto;
+    background-color: beige;
+    color: #314028;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    align-items: center;
+    padding: 200px;
+    margin:auto;
+    color: #314028;
+    background-color: beige;
+}
+
+.realprojects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
 .project1 {
-    width: 600px;
+    width: 400px;
 }
+
 .pro1 {
-    color: black;
+    color: #f4f1e8;
 }
 
 .skills {
     align-items: center;
-    padding: 50px;
-    margin: auto;
-    width: 70%;
+    padding: 200px;
+    margin:auto;
+    color: #314028;
+    background-color: beige;
 }
 
 .contacts {
     align-items: center;
-    padding: 50px;
-    margin: auto;
-    width: 70%;
+    padding: 200px;
+    margin:auto;
+    background-color: beige;
+    color: #314028;
 }
 
 .contacts a {
     text-decoration: none;
-    color: black;
-
+    color: #314028;
 }
 
 .contacts a:hover {
@@ -101,8 +116,8 @@ main {
 
 
 .bottom {
-    background-color: lightgray;
+    background-color: #314028;
     text-align: center;
-    padding: 20px;
-
+    padding: 30px;
+    color: beige; 
 }
