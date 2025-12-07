@@ -111,3 +111,9 @@
     padding: 30px;
     color: beige; 
 }
+
+@media screen and (max-width: 800px) {
+   .main {
+    width: 100%;
+  }
+}
