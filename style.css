@@ -1,6 +1,18 @@
 * {
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    inline-size: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
 
 .navbar {
@@ -38,43 +50,49 @@
     border-color: #314028;
 }
 
-.home {
-    align-items: center;
-    padding: 200px;
-    margin: 0;
-    border: 0;
-    color: #314028;
-    background-color: beige;
-}
-
 .intro {
     display: grid;
     grid-template-columns: auto auto;
     gap: 5px;
     align-items: center;
-    padding: 200px;
+    padding: 155px;
     margin:auto;
     background-color: beige;
     color: #314028;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 5px;
-    align-items: center;
+.proj {
     padding: 200px;
+    background-color: beige;
+}
+
+.proj-title {
+    color: #314028;
+    background-color: beige;
+    text-align: left;
+}
+
+.realprojects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.projects {
+    align-items: center;
     margin:auto;
     color: #314028;
     background-color: beige;
 }
 
 .project1 {
-    width: 400px;
+    width: 300px;
 }
 
 .pro1 {
-    color: #f4f1e8;
+    color: #314028;
 }
 
 .skills {
@@ -83,6 +101,16 @@
     margin:auto;
     color: #314028;
     background-color: beige;
+}
+
+.skills div h2 {
+    padding: 20px;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 48px;
 }
 
 .contacts {
@@ -110,10 +138,4 @@
     text-align: center;
     padding: 30px;
     color: beige; 
-}
-
-@media screen and (max-width: 800px) {
-   .main {
-    width: 100%;
-  }
 }

@@ -15,22 +15,16 @@
             </div>
             <div>
                 <ul>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Contacts</a>
+                    <a href="#about">About</a>
+                    <a href="#project">Projects</a>
+                    <a href="#skill">Skills</a>
+                    <a href="#contact">Contacts</a>
                 </ul>
             </div>
         </nav>
     </header> 
     <main>
-        <section class="home">
-                <h2>Home</h2>
-                <br>
-                <p>Welcome to my website! You will find here the information of this website's maker that is Lian Petil. I hope you find your visit to this website worthwhile.</p>
-        </section>
-
-        <section class="intro">
+        <section class="intro" id="about">
             <div class="textintro">
                 <h2>About me </h2>
                 <br> 
@@ -42,49 +36,45 @@
                 <img class=pfp src="pfp2.jpg" alt="">
             </div>
         </section>
-        <section class="projects">
+        <section class="proj" id="project">
+            <div class="proj-title">
             <h2>Projects</h2>
             <br>
             <p>These are the projects that I had been working on:</p>
-            <br>
+            </div>
+        <section class="projects">
             <div class="realprojects">
-                <br>
                 <div>
                     <h3>Project 1</h3>
-                    <br>
                     <p>Minimalist Website</p>
-                    <br>
                     <img class="project1" src="project1website.jpg" alt="">
                     <br>
                     <a class="pro1" href="https://minimalist-website-delta.vercel.app/">Link to this project</a>
                 </div>
-                <br>
                 <div>
                     <h3>Project 2</h3>
-                    <br>
                     <p>Blog Website</p>
                 </div>
-                <br>
                 <div>
                     <h3>Project 3</h3>
-                    <br>
                     <p>Contact Form</p>
                 </div>
             </div>
         </section>
-        <section class="skills">
+        </section>
+        <section class="skills" id="skill">
             <div>
                 <h2>Skills</h2>
-                <br> 
-                <ol>
-                    <li>C#</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Basic Web Design</li>
-                </ol>
+                <br>
+                <ul class="languages">
+                    <div><i class="fa-solid fa-c"></i><i class="fa-solid fa-hashtag"></i></div>
+                    <div><i class="fa-brands fa-html5"></i></div>
+                    <div><i class="fa-brands fa-css"></i></div>
+                    <div><i class="fa-brands fa-python"></i></div>
+                </ul>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contact">
             <h2>Contacts</h2>
             <br>
             <p>Here are my contact info if you want to keep in touch:</p>
@@ -99,7 +89,7 @@
         </section>
     </main>
     <footer class="bottom">
-        <p>&copy;All Rights Reserved.</p>
+        <p>&copy; All Rights Reserved.</p>
     </footer>
 
 </body>
