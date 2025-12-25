@@ -9,10 +9,24 @@ html {
     scroll-behavior: smooth;
 }
 
+.container {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 auto;
+    width: 100%
+}
+
+body {
+    margin: 0;
+}
+
 .wrapper {
     position: sticky;
     top: 0;
     overflow: hidden;
+    width: 100%;
+    
 }
 
 .navbar {
@@ -64,6 +78,13 @@ html {
 .proj {
     padding: 200px;
     background-color: beige;
+    border-radius: 20px;
+}
+
+.border {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 50px;
 }
 
 .proj-title {
@@ -73,10 +94,8 @@ html {
 }
 
 .realprojects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 50px;
+    padding: 50px;
     
 }
 
@@ -85,14 +104,91 @@ html {
     margin:auto;
     color: #314028;
     background-color: beige;
+    
 }
 
-.project1 {
-    width: 300px;
+.card1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.3s;
 }
 
-.pro1 {
+.card1:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.card-left-content, .card-left-content2 {
+    padding: 10px;
+}
+
+.card-right-content, .card-right-content2 {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-right-content img, .card-right-content2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+.card2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.card2:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.card3 {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.card3:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.pro1, .pro2{
     color: #314028;
+    transition: 0.3s;
+    border: solid;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.pro1 a:hover, .pro2 a:hover {
+    transform: scale(1.05);
+    transition: width 0.3s ease-out;
+}
+
+.border2 {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .skills {
@@ -113,6 +209,62 @@ html {
     font-size: 48px;
 }
 
+.sharp {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.html {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.css {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.python {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.sharp:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.html:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.css:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.python:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
 .contacts {
     align-items: center;
     padding: 200px;
@@ -127,9 +279,9 @@ html {
 }
 
 .contacts a:hover {
-    transform: scale(1.05);
-    transition: width 0.3s ease-out;
-    color: grey;
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 
