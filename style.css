@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main p {
+    max-width: 600px;
+}
+
 .container {
     max-width: 2000px;
     margin-left: auto;
@@ -67,16 +71,16 @@ body {
 .intro {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 5px;
+    gap: 10%;
     align-items: center;
-    padding: 155px;
+    padding: 10%;
     margin:auto;
     background-color: beige;
     color: #314028;
 }
 
 .proj {
-    padding: 200px;
+    padding: 5rem;
     background-color: beige;
     border-radius: 20px;
 }
@@ -95,8 +99,8 @@ body {
 
 .realprojects {
     gap: 50px;
-    padding: 50px;
-    
+    padding: auto;
+    width: auto;
 }
 
 .projects {
@@ -189,11 +193,14 @@ body {
     border: 2px solid #314028;
     border-radius: 20px;
     padding: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .skills {
+    display: flex;
     align-items: center;
-    padding: 200px;
+    padding: 7rem;
     margin:auto;
     color: #314028;
     background-color: beige;
@@ -215,6 +222,8 @@ body {
     padding: 50px;
     margin: 20px;
     transition: 0.3s;
+    min-width: 0;
+    min-height: 0;
 }
 
 .html {
@@ -223,6 +232,8 @@ body {
     padding: 50px;
     margin: 20px;
     transition: 0.3s;
+    min-width: 0;
+    min-height: 0;
 }
 
 .css {
@@ -231,6 +242,8 @@ body {
     padding: 50px;
     margin: 20px;
     transition: 0.3s;
+    min-width: 0;
+    min-height: 0;
 }
 
 .python {
@@ -239,6 +252,8 @@ body {
     padding: 50px;
     margin: 20px;
     transition: 0.3s;
+    min-width: 0;
+    min-height: 0;
 }
 
 .sharp:hover {
@@ -267,7 +282,7 @@ body {
 
 .contacts {
     align-items: center;
-    padding: 200px;
+    padding: 6rem;
     margin:auto;
     background-color: beige;
     color: #314028;
@@ -290,4 +305,30 @@ body {
     text-align: center;
     padding: 30px;
     color: beige; 
+}
+
+@media (max-width: 600px) {
+    .languages {
+        grid-template-columns: 1fr;
+
+    }
+    
+    .intro {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .languages {
+        grid-template-columns: 1fr;
+    }
+
+    .sharp, .html, .css, .python {
+        display: flex;
+        align-items: center;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+    }
 }
