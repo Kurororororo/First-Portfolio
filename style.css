@@ -30,7 +30,7 @@ body {
     top: 0;
     overflow: hidden;
     width: 100%;
-    
+    z-index: 1000;
 }
 
 .navbar {
@@ -50,11 +50,11 @@ body {
 .navbar ul a {
     text-decoration: none;
     color: beige;
-    
+
 }
 
 .navbar ul a:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
     transition: 0.3s ease-out;
     color: white;
 }
@@ -66,21 +66,29 @@ body {
     object-fit: cover;
     border: solid 3px;
     border-color: #314028;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .intro {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10%;
     align-items: center;
     padding: 10%;
-    margin:auto;
     background-color: beige;
     color: #314028;
 }
 
+.textintro {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 7.5%;
+    height: auto;
+    width: 95%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .proj {
-    padding: 5rem;
+    padding: 1rem 2rem;
     background-color: beige;
     border-radius: 20px;
 }
@@ -89,6 +97,8 @@ body {
     border: 2px solid #314028;
     border-radius: 20px;
     padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .proj-title {
@@ -105,10 +115,10 @@ body {
 
 .projects {
     align-items: center;
-    margin:auto;
+    margin: auto;
     color: #314028;
     background-color: beige;
-    
+
 }
 
 .card1 {
@@ -122,16 +132,18 @@ body {
 }
 
 .card1:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
-.card-left-content, .card-left-content2 {
+.card-left-content,
+.card-left-content2 {
     padding: 10px;
 }
 
-.card-right-content, .card-right-content2 {
+.card-right-content,
+.card-right-content2 {
     width: 100%;
     height: 200px;
     align-items: center;
@@ -139,10 +151,11 @@ body {
     overflow: hidden;
 }
 
-.card-right-content img, .card-right-content2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; 
+.card-right-content img,
+.card-right-content2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .card2 {
@@ -156,7 +169,7 @@ body {
 }
 
 .card2:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
@@ -170,21 +183,20 @@ body {
 }
 
 .card3:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
-.pro1, .pro2{
+.pro1,
+.pro2 {
     color: #314028;
     transition: 0.3s;
-    border: solid;
-    border-radius: 20px;
-    text-decoration: none;
     padding: 5px;
 }
 
-.pro1 a:hover, .pro2 a:hover {
+.pro1 a:hover,
+.pro2 a:hover {
     transform: scale(1.05);
     transition: width 0.3s ease-out;
 }
@@ -195,13 +207,14 @@ body {
     padding: 20px;
     width: 100%;
     height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .skills {
     display: flex;
     align-items: center;
-    padding: 7rem;
-    margin:auto;
+    padding: 4rem;
+    margin: auto;
     color: #314028;
     background-color: beige;
 }
@@ -224,6 +237,9 @@ body {
     transition: 0.3s;
     min-width: 0;
     min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .html {
@@ -234,6 +250,9 @@ body {
     transition: 0.3s;
     min-width: 0;
     min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .css {
@@ -244,6 +263,9 @@ body {
     transition: 0.3s;
     min-width: 0;
     min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .python {
@@ -254,38 +276,51 @@ body {
     transition: 0.3s;
     min-width: 0;
     min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sharp:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
 .html:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
 .css:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
 .python:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
+.border3 {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+}
+
 .contacts {
     align-items: center;
-    padding: 6rem;
-    margin:auto;
+    padding: 7.5rem;
     background-color: beige;
     color: #314028;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contacts a {
@@ -293,8 +328,9 @@ body {
     color: #314028;
 }
 
-.contacts a:hover {
-    transform: scale(1.05); 
+.contacts a:hover,
+.border3 {
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
@@ -304,18 +340,23 @@ body {
     background-color: #314028;
     text-align: center;
     padding: 30px;
-    color: beige; 
+    color: beige;
 }
 
 @media (max-width: 600px) {
-    .languages {
+
+    .languages,
+    .card1,
+    .card2,
+    .card3 {
         grid-template-columns: 1fr;
 
     }
-    
+
     .intro {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -323,7 +364,10 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .sharp, .html, .css, .python {
+    .sharp,
+    .html,
+    .css,
+    .python {
         display: flex;
         align-items: center;
     }
@@ -331,4 +375,5 @@ body {
     .intro {
         grid-template-columns: 1fr;
     }
+
 }
