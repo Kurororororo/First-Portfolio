@@ -34,11 +34,11 @@ body {
 }
 
 .navbar {
-    position: relative;
+    
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 8fr;
     background-color: #314028;
-    padding: 30px;
+    padding: 2rem;
     color: beige;
 }
 
@@ -86,6 +86,7 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    gap: 20px;
 }
 
 .textintro {
@@ -373,6 +374,11 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .pfp {
+        width: 45vw;
+        height: 45vw;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -390,6 +396,11 @@ body {
 
     .intro, .intro-grid {
         grid-template-columns: 1fr;
+    }
+
+    .pfp {
+        width: 45vw;
+        height: 45vw;
     }
 
 }
