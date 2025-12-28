@@ -60,8 +60,8 @@ body {
 }
 
 .pfp {
-    width: 300px;
-    height: 300px;
+    width: 25vw;
+    height: 25vw;
     border-radius: 50%;
     object-fit: cover;
     border: solid 3px;
@@ -70,12 +70,22 @@ body {
 }
 
 .intro {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
     padding: 10%;
     background-color: beige;
     color: #314028;
+}
+
+.border4 {
+    border: 2px solid #314028;
+    border-radius: 20px;
+    padding: 4rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
 
 .textintro {
@@ -84,7 +94,13 @@ body {
     padding: 7.5%;
     height: auto;
     width: 95%;
+    transition: 0.3s;
+}
+
+.textintro:hover {
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .proj {
@@ -315,7 +331,7 @@ body {
 
 .contacts {
     align-items: center;
-    padding: 7.5rem;
+    padding: 6rem;
     background-color: beige;
     color: #314028;
     display: flex;
@@ -353,7 +369,7 @@ body {
 
     }
 
-    .intro {
+    .intro, .intro-grid {
         grid-template-columns: 1fr;
     }
 
@@ -372,9 +388,8 @@ body {
         align-items: center;
     }
 
-    .intro {
+    .intro, .intro-grid {
         grid-template-columns: 1fr;
     }
-
 
 }
